@@ -1,3 +1,15 @@
+html {
+	--font: Source Sans Pro, serif;
+	--font-header: Geogrotesque, sans-serif;
+	--font-mono: JetBrains Mono, monospace;
+	--font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--background: #00332c;
+	--primary: #f2f7f5;
+	--secondary: #ffa8ba;
+	--tertiary: #fa5246;
+	--highlight: #faae2b;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -5,11 +17,12 @@ html, body {
 }
 
 body {
-	color: #333;
+	background-color: var(--background);
+	color: white;
 	margin: 0;
-	padding: 8px;
+	padding: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--font);
 }
 
 a {
